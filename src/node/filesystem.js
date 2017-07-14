@@ -37,11 +37,9 @@ class Filesystem {
               return stat
             })
             .then(stat => {
-              fileInfo.info.mode = stat.mode
               fileInfo.info.size = stat.size
               fileInfo.info.ctime = stat.ctime
               fileInfo.info.mtime = stat.mtime
-              fileInfo.info.atime = stat.atime
               return fileInfo
             })
             .catch(err => {

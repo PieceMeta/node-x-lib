@@ -3,10 +3,14 @@
     [
       "es2015",
       {
-        "modules": false
+        "modules": false,
+        "targets": {
+          "node": true,
+          "browser": true
+        }
       }
     ],
-    "stage-2"
+    "stage-3"
   ],
   "plugins": [
     "transform-runtime"
