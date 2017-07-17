@@ -7,7 +7,7 @@
     "node": ">=6.5"
   },
   "scripts": {
-    "test": "exit 0 && mocha $(find test -path '*.spec.*') --compilers js:babel-core/register --recursive --no-timeouts",
+    "test": "mocha $(find test -path '*.spec.*') --compilers js:babel-core/register --recursive --no-timeouts",
     "lint": "eslint --ext .js src",
     "build": "babel --source-root src/ -d dist/ src/",
     "dist": "del dist && npm run lint && npm run test && npm run build"
